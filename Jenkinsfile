@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     stages {
-        stage{
-            steps{
+        stage {
+            steps {
                 echo 'First commit'
             }
         }
