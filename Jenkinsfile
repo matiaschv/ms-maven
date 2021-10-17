@@ -1,6 +1,12 @@
 pipeline {
     agent any
     
+    tools {
+        maven 'Maven'
+        nodejs 'NodeJs'
+    }
+  
+    
     stages {
         stage('initial'){
             steps{
