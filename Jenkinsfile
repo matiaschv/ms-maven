@@ -32,6 +32,15 @@ pipeline {
                 sh 'mvn clean test -e'
             }
         }
+        
+        stage('SCA'){
+            steps{
+                figlet 'Dependency-Check'
+                sh 'mvn org.owasp:dependency-check-maven:check'
+                
+                archiveArtifacts artifacts: 'target/dependency-check-report.html', followSymlinks: false
+            }
+        }
 
         stage('Sonarqube'){
            steps{
@@ -44,6 +53,6 @@ pipeline {
                    }
                }
            }
-          }
+        }
     }
 }
