@@ -777,7 +777,6 @@
                     <groupId>org.owasp</groupId>
                     <artifactId>dependency-check-maven</artifactId>
                     <version>6.2.2</version>
-                    <failOnError>false</failOnError>
                     <executions>
                         <execution>
                             <goals>
