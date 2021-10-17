@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('initial'){
             steps {
-                echo 'First commit'
+                sh'''
+                echo "PATH = ${PATH}"
+                echo "M_HOME = ${M_HOME}"
             }
         }
     }
