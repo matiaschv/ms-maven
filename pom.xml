@@ -784,6 +784,7 @@
                             </goals>
                         </execution>
                     </executions>
+                    <failOnError>false</failOnError>
                     <!--<configuration>
                         <showSummary>false</showSummary>
                         <failBuildOnCVSS>7</failBuildOnCVSS>
